@@ -40,4 +40,4 @@ def search1():
     return jsonify({'query': query, 'suggestions': lst2})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
