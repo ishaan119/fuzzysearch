@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-from seach import TrieNode, search
+from tries import TrieNode, search
 import time
 from trigram import Trigram
 app = Flask(__name__, static_url_path='/static')
