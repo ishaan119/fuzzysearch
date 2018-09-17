@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>DevBridge Autocomplete Demo</title>
-    <link href="content/styles.css" rel="stylesheet" />
+    <title>Autocomplete Demo</title>
+    <link href="/static/css/style.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
-
-        <input type="text" name="country" id="autocomplete"/>
-
+        <h1>Autocomplete Demo Using TriGram</h1>
+        <div style="position: relative; height: 80px;">
+        <input type="text" name="word" id="autocomplete" style="position: absolute; z-index: 2; background: transparent;"/>
+        </div>
 
     </div>
 
@@ -19,7 +20,7 @@
             minChars: 3,
             serviceUrl: '/search',
             onSelect: function (suggestion) {
-                alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+                alert('You selected: ' + suggestion.value );
             }
         });
     </script>
